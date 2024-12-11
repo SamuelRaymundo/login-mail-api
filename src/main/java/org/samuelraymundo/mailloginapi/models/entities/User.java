@@ -1,8 +1,6 @@
 package org.samuelraymundo.mailloginapi.models.entities;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
@@ -12,6 +10,8 @@ import java.io.Serializable;
 @AllArgsConstructor
 @Getter
 @Setter
+@Entity
+@Table(name = "app_user")
 public class User implements Serializable {
 
     @Id
